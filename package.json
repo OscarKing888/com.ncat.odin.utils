@@ -1,0 +1,18 @@
+{
+  "name": "com.ncat.odin.utils",
+  "version": "0.1.0",
+  "displayName": "NCat Odin Utilities",
+  "description": "This packages includes helpful runtime and editor additions of Odin Inspector to Unity.",
+  "unity": "2021.3",
+  "keywords": [
+    "Utilities",
+    "Utils",
+    "NCat",
+    "Odin",
+    "Odin Inspector"
+  ],
+  "author": {
+    "name": "Naughty Cat Games",
+    "email": "NaughtyCatGames@gmail.com"
+  }
+}
