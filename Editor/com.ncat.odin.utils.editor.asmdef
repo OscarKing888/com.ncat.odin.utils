@@ -1,0 +1,18 @@
+{
+    "name": "com.ncat.odin.utils.editor",
+    "rootNamespace": "NCat.Editor",
+    "references": [
+        "GUID:6226f937d3da847a6beda0b48cbe45d8"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
