@@ -91,7 +91,7 @@ public class NCatEnumDefine : ScriptableObject
         string tmpStr = "";
         for (int i = 0; i < DefineListNew.Count; i++)
         {
-            EnumDefineData data = DefineListNew[i];
+            NCatEnumDefineData data = DefineListNew[i];
             if (!string.IsNullOrEmpty(data.Name))
             {
                 tmpStr += data.Name + "\r\n";
@@ -109,7 +109,7 @@ public class NCatEnumDefine : ScriptableObject
         string tmpStr = "";
         for (int i = 0; i < DefineListNew.Count; i++)
         {
-            EnumDefineData data = DefineListNew[i];
+            NCatEnumDefineData data = DefineListNew[i];
             if (!string.IsNullOrEmpty(data.Name))
             {
                 tmpStr += data.DisplayName + "\r\n";
@@ -137,6 +137,7 @@ public class NCatEnumDefine : ScriptableObject
             str += "//\r\n";
             str += "\r\n";
             str += "\r\n";
+            str += "using Sirenix.OdinInspector;\r\n\r\n";
 
             if (IsMask)
             {
@@ -157,7 +158,7 @@ public class NCatEnumDefine : ScriptableObject
 
             for (int i = 0; i < DefineListNew.Count; i++)
             {
-                EnumDefineData data = DefineListNew[i];
+                NCatEnumDefineData data = DefineListNew[i];
                 if (!string.IsNullOrEmpty(data.Name))
                 {
                     string dispName = string.IsNullOrEmpty(data.DisplayName) ? data.Name : data.DisplayName;
