@@ -38,6 +38,9 @@ namespace NCat.Editor.Odin
         [LabelText("enum 类型名")]
         public string GenEnumName;
 
+        [LabelText("enum 显示名")]
+        public string GenEnumDisplayName;
+
         [LabelText("enum 变量前辍")]
         public string GenEnumPrefix;
 
@@ -144,6 +147,11 @@ namespace NCat.Editor.Odin
                 if (IsMask)
                 {
                     str += "[System.Flags]\r\n";
+                }
+
+                if(!string.IsNullOrEmpty(GenEnumDisplayName))
+                {
+                    str += $"[LabelText(\"{GenEnumDisplayName}\")]\r\n";
                 }
 
                 str += "public enum " + GenEnumName + "\r\n{\r\n";
