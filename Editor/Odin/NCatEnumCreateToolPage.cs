@@ -40,7 +40,10 @@ namespace NCat.Editor.Odin
                 Directory.GetCurrentDirectory(),
                 System.IO.Path.GetDirectoryName(file));
             Debug.Log("Create Dir:" + dir);
-            Directory.CreateDirectory(dir);
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+            }
 
             string assetPath = file;
 
